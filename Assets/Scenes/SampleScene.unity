@@ -668,6 +668,8 @@ MonoBehaviour:
   smer_X: 0
   smer_Y: 0
   isTopPaddle: 0
+  last_Speed: 5
+  direction: 0
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -959,6 +961,8 @@ MonoBehaviour:
   smer_X: 0
   smer_Y: 0
   isTopPaddle: 0
+  last_Speed: 5
+  direction: 0
 --- !u!1 &788254749
 GameObject:
   m_ObjectHideFlags: 0
@@ -1778,6 +1782,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ball_Movement
   game_Manager: {fileID: 80286637}
+  Speed: 1.1
+  bounce_Counter: 0
 --- !u!1 &2093047720
 GameObject:
   m_ObjectHideFlags: 0

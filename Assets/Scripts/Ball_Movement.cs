@@ -1,9 +1,12 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Ball_Movement : MonoBehaviour
 {
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	public Game_Manager game_Manager;
+	public float Speed = 1.1f;
+	public int bounce_Counter = 0;
     void Direction()
     {
 		Transform transform = GetComponent<Transform>();
@@ -73,7 +76,6 @@ public class Ball_Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
@@ -96,5 +98,22 @@ public class Ball_Movement : MonoBehaviour
 			Direction();
 		}
 
+	}
+	private void OnCollisionEnter2D(Collision2D collision)
+	{
+		Rigidbody2D rb = GetComponent<Rigidbody2D>();
+
+		if (bounce_Counter < 10)
+		{
+			rb.linearVelocity *= Speed;
+		}
+		else
+		{
+			Speed = 1.05f;
+			rb.linearVelocity *= Speed;
+		}
+		bounce_Counter++;
+
+		
 	}
 }
