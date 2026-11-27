@@ -75,4 +75,12 @@ public class Paddle_Movement : MonoBehaviour
 	{
 		EnhancedTouchSupport.Disable();
 	}
+	private void OnCollisionEnter2D(Collision2D collision)
+	{
+		Transform transform = GetComponent<Transform>();
+		if(collision.gameObject.CompareTag("Ball") && transform.localScale.x > 3)
+		{
+			transform.localScale -= new Vector3(0.5f, 0, 0);
+		}
+	}
 }

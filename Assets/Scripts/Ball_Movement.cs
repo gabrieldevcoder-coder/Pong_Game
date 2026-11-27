@@ -107,7 +107,7 @@ public class Ball_Movement : MonoBehaviour
 		{
 			rb.linearVelocity *= Speed;
 		}
-		else
+		else if(bounce_Counter < 15)
 		{
 			Speed = 1.05f;
 			rb.linearVelocity *= Speed;
