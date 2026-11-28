@@ -12,7 +12,7 @@ public class Game_Manager : MonoBehaviour
 
 	void Start()
 	{
-		score_text.text = score_player_1 + " : " + score_player_2;
+		score_text.text = score_player_2 + " : " + score_player_1;
 	}
 
 	void Update()
@@ -26,6 +26,6 @@ public class Game_Manager : MonoBehaviour
 		else if (player == 1)
 			score_player_2++;
 
-		score_text.text = score_player_1 + " : " + score_player_2;
+		score_text.text = score_player_2 + " : " + score_player_1;
 	}
 }

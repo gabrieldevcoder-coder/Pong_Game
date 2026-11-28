@@ -9,6 +9,8 @@ public class Ball_Movement : MonoBehaviour
 	public int bounce_Counter = 0;
     void Direction()
     {
+		bounce_Counter = 0;
+		Speed = 1.1f;
 		Transform transform = GetComponent<Transform>();
 		transform.position = new Vector2(0,0);
 		Rigidbody2D rb = GetComponent<Rigidbody2D>();

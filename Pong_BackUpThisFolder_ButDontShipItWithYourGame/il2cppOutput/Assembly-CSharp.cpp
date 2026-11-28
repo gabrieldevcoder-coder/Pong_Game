@@ -2414,6 +2414,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Ball_Movement_Direction_m9BC3F9A27069D69
 	Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* V_0 = NULL;
 	int32_t V_1 = 0;
 	{
+		__this->___bounce_Counter = 0;
+		__this->___Speed = (1.10000002f);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
 		L_0 = Component_GetComponent_TisTransform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1_m60E86366B3E431D4C4A549CF4FE5951087686F7F(__this, Component_GetComponent_TisTransform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1_m60E86366B3E431D4C4A549CF4FE5951087686F7F_RuntimeMethod_var);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_1;
@@ -2434,67 +2436,67 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Ball_Movement_Direction_m9BC3F9A27069D69
 		{
 			case 0:
 			{
-				goto IL_0078;
+				goto IL_008a;
 			}
 			case 1:
 			{
-				goto IL_008e;
+				goto IL_00a0;
 			}
 			case 2:
 			{
-				goto IL_00a4;
+				goto IL_00b6;
 			}
 			case 3:
 			{
-				goto IL_00ba;
+				goto IL_00cc;
 			}
 			case 4:
 			{
-				goto IL_00d0;
+				goto IL_00e2;
 			}
 			case 5:
 			{
-				goto IL_00e6;
+				goto IL_00f8;
 			}
 			case 6:
 			{
-				goto IL_00fc;
+				goto IL_010e;
 			}
 			case 7:
 			{
-				goto IL_0112;
+				goto IL_0124;
 			}
 			case 8:
 			{
-				goto IL_0128;
+				goto IL_013a;
 			}
 			case 9:
 			{
-				goto IL_013e;
+				goto IL_0150;
 			}
 			case 10:
 			{
-				goto IL_0154;
+				goto IL_0166;
 			}
 			case 11:
 			{
-				goto IL_016a;
+				goto IL_017c;
 			}
 			case 12:
 			{
-				goto IL_0180;
+				goto IL_0192;
 			}
 			case 13:
 			{
-				goto IL_0196;
+				goto IL_01a8;
 			}
 			case 14:
 			{
-				goto IL_01ac;
+				goto IL_01be;
 			}
 			case 15:
 			{
-				goto IL_01c2;
+				goto IL_01d4;
 			}
 		}
 	}
@@ -2502,7 +2504,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Ball_Movement_Direction_m9BC3F9A27069D69
 		return;
 	}
 
-IL_0078:
+IL_008a:
 	{
 		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_6 = V_0;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_7;
@@ -2513,7 +2515,7 @@ IL_0078:
 		return;
 	}
 
-IL_008e:
+IL_00a0:
 	{
 		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_8 = V_0;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_9;
@@ -2524,7 +2526,7 @@ IL_008e:
 		return;
 	}
 
-IL_00a4:
+IL_00b6:
 	{
 		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_10 = V_0;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_11;
@@ -2535,7 +2537,7 @@ IL_00a4:
 		return;
 	}
 
-IL_00ba:
+IL_00cc:
 	{
 		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_12 = V_0;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_13;
@@ -2546,7 +2548,7 @@ IL_00ba:
 		return;
 	}
 
-IL_00d0:
+IL_00e2:
 	{
 		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_14 = V_0;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_15;
@@ -2557,7 +2559,7 @@ IL_00d0:
 		return;
 	}
 
-IL_00e6:
+IL_00f8:
 	{
 		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_16 = V_0;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_17;
@@ -2568,7 +2570,7 @@ IL_00e6:
 		return;
 	}
 
-IL_00fc:
+IL_010e:
 	{
 		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_18 = V_0;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_19;
@@ -2579,7 +2581,7 @@ IL_00fc:
 		return;
 	}
 
-IL_0112:
+IL_0124:
 	{
 		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_20 = V_0;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_21;
@@ -2590,7 +2592,7 @@ IL_0112:
 		return;
 	}
 
-IL_0128:
+IL_013a:
 	{
 		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_22 = V_0;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_23;
@@ -2601,7 +2603,7 @@ IL_0128:
 		return;
 	}
 
-IL_013e:
+IL_0150:
 	{
 		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_24 = V_0;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_25;
@@ -2612,7 +2614,7 @@ IL_013e:
 		return;
 	}
 
-IL_0154:
+IL_0166:
 	{
 		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_26 = V_0;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_27;
@@ -2623,7 +2625,7 @@ IL_0154:
 		return;
 	}
 
-IL_016a:
+IL_017c:
 	{
 		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_28 = V_0;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_29;
@@ -2634,7 +2636,7 @@ IL_016a:
 		return;
 	}
 
-IL_0180:
+IL_0192:
 	{
 		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_30 = V_0;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_31;
@@ -2645,7 +2647,7 @@ IL_0180:
 		return;
 	}
 
-IL_0196:
+IL_01a8:
 	{
 		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_32 = V_0;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_33;
@@ -2656,7 +2658,7 @@ IL_0196:
 		return;
 	}
 
-IL_01ac:
+IL_01be:
 	{
 		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_34 = V_0;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_35;
@@ -2667,7 +2669,7 @@ IL_01ac:
 		return;
 	}
 
-IL_01c2:
+IL_01d4:
 	{
 		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_36 = V_0;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_37;
@@ -2846,10 +2848,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Game_Manager_Start_m229047CB8D096F0281F8
 	//<source_info:<no-source>:1>
 	{
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_0 = __this->___score_text;
-		int32_t* L_1 = (int32_t*)(&__this->___score_player_1);
+		int32_t* L_1 = (int32_t*)(&__this->___score_player_2);
 		String_t* L_2;
 		L_2 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_1, NULL);
-		int32_t* L_3 = (int32_t*)(&__this->___score_player_2);
+		int32_t* L_3 = (int32_t*)(&__this->___score_player_1);
 		String_t* L_4;
 		L_4 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_3, NULL);
 		String_t* L_5;
@@ -2906,10 +2908,10 @@ IL_0013:
 IL_0025:
 	{
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_4 = __this->___score_text;
-		int32_t* L_5 = (int32_t*)(&__this->___score_player_1);
+		int32_t* L_5 = (int32_t*)(&__this->___score_player_2);
 		String_t* L_6;
 		L_6 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_5, NULL);
-		int32_t* L_7 = (int32_t*)(&__this->___score_player_2);
+		int32_t* L_7 = (int32_t*)(&__this->___score_player_1);
 		String_t* L_8;
 		L_8 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_7, NULL);
 		String_t* L_9;
@@ -3243,7 +3245,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Paddle_Movement_OnCollisionEnter2D_mBC1D
 		L_3 = GameObject_CompareTag_m6378BE50D009A93D46036F74CC3F7E2ECB0636E5(L_2, _stringLiteralAF4FE737DB07A38DC7B9A34B4BA555906EC0EFA9, NULL);
 		if (!L_3)
 		{
-			goto IL_0050;
+			goto IL_0051;
 		}
 	}
 	{
@@ -3252,9 +3254,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Paddle_Movement_OnCollisionEnter2D_mBC1D
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
 		L_5 = Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F(L_4, NULL);
 		float L_6 = L_5.___x;
-		if ((!(((float)L_6) > ((float)(3.0f)))))
+		if ((!(((float)L_6) >= ((float)(3.0f)))))
 		{
-			goto IL_0050;
+			goto IL_0051;
 		}
 	}
 	{
@@ -3270,9 +3272,50 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Paddle_Movement_OnCollisionEnter2D_mBC1D
 		L_11 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_9, L_10, NULL);
 		NullCheck(L_8);
 		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_8, L_11, NULL);
+		return;
 	}
 
-IL_0050:
+IL_0051:
+	{
+		Collision2D_t81E83212C969FDDE2AB84EBCA31502818EEAB85B* L_12 = ___0_collision;
+		NullCheck(L_12);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13;
+		L_13 = Collision2D_get_gameObject_mE4B3D56F3477F7D2D6D7B217DF5488DA1D13204C(L_12, NULL);
+		NullCheck(L_13);
+		bool L_14;
+		L_14 = GameObject_CompareTag_m6378BE50D009A93D46036F74CC3F7E2ECB0636E5(L_13, _stringLiteralAF4FE737DB07A38DC7B9A34B4BA555906EC0EFA9, NULL);
+		if (!L_14)
+		{
+			goto IL_009a;
+		}
+	}
+	{
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15 = V_0;
+		NullCheck(L_15);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16;
+		L_16 = Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F(L_15, NULL);
+		float L_17 = L_16.___x;
+		if ((!(((float)L_17) >= ((float)(1.0f)))))
+		{
+			goto IL_009a;
+		}
+	}
+	{
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_18 = V_0;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_19 = L_18;
+		NullCheck(L_19);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20;
+		L_20 = Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F(L_19, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21;
+		memset((&L_21), 0, sizeof(L_21));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_21), (0.25f), (0.0f), (0.0f), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22;
+		L_22 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_20, L_21, NULL);
+		NullCheck(L_19);
+		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_19, L_22, NULL);
+	}
+
+IL_009a:
 	{
 		return;
 	}
